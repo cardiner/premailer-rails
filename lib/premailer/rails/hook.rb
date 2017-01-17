@@ -46,6 +46,7 @@ class Premailer
       end
 
       def generate_html_part_replacement
+        binding.pry
         if generate_text_part?
           generate_alternative_part
         else
