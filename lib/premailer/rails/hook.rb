@@ -5,6 +5,7 @@ class Premailer
 
       class << self
         def perform(message)
+          binding.pry
           new(message).perform
           message
         end
@@ -14,7 +15,6 @@ class Premailer
       end
 
       def initialize(message)
-        binding.pry
         @message = message
       end
 
