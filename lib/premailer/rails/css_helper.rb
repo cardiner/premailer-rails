@@ -26,7 +26,7 @@ class Premailer
       private
 
       def css_urls_in_doc(doc)
-        raise
+        binding.pry
         doc.search('link[@rel="stylesheet"]:not([@data-premailer="ignore"])').map do |link|
           if link.respond_to?(:remove)
             link.remove
